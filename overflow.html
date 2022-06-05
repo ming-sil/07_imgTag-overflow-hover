@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .img_wrap{
+            width: 500px;
+            height: 300px;
+            border: 3px solid black;
+            overflow: hidden;
+            /* =>부모 밖으로 넘쳐나는 자식을 안보이게 가려줌
+            =>포토샵, 일러 등 디자인 툴에서 마스크기능과 동일 */
+        }
+
+        .img_wrap img{
+            width: 1000px;
+            height: 500px;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="img_wrap">
+        <img src="img/epik.jpg" alt="에픽하이 가족사진" />
+    </div>
+
+</body>
+</html>

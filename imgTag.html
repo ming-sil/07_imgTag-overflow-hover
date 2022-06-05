@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지태그</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        img{
+            width: 50%;
+            /* height: 300px; */ 
+            /* =>img태그는 인라인 요소지만 크기값이 들어감
+            =>이미지 태그를 사용할 땐 높이값을 넣으면 이미지가 깨짐 */
+            display: block;
+            /* =>기본 인라인 요소기때문에 알수없는 크기값이 존재함 
+              경우에따라 block요소로 만들어주는게 좋음 */
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <img src="img/epik.jpg" alt="에픽하이 가족사진" />
+    <!-- =>self closing tag -->
+    <!-- =>이미지를 불러올 때 사용 -->
+    <!-- =>alt는 이미지경로를 상실했을 때 글자로 대처, 시각 장애인들을 위한 이미지 설명글 -->
+    <img src="img/epik.jpg" alt="에픽하이 가족사진" />
+
+</body>
+</html>

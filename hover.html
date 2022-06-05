@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .box{
+            width: 300px;
+            height: 300px;
+            background-color: salmon;
+        }
+
+        .box:hover{
+            background-color: teal;
+            /* background-color: rgba(0, 0, 0, 0); */
+            /* opacity: 0; */
+            /* display: none; */
+            font-size: 50px;
+        }
+
+        /* *hover
+        =>특정 엘리먼트에 마우스르 올렸을 때 어떠한 동작을 진행 할 수 있음
+        =>선택자:hover{속성:속성값;} */
+
+        .parent{
+            width: 400px;
+            height: 200px;
+            background-color: gray;
+        }
+
+        .child{
+            width: 100px;
+            height: 100px;
+            background-color: gold;
+            margin: 0 auto;
+        }
+
+        .parent:hover .child{
+            width: 150px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="box">
+        와! 신기해!
+    </div>
+
+    <div class="parent">
+        <div class="child"></div>
+    </div>
+    
+</body>
+</html>

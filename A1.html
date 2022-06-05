@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지 예제 풀이</title>
+
+    <style>
+
+        *{margin: 0; padding: 0;}
+
+        a{text-decoration: none;}
+
+        img{
+            width: 100%;
+            display: block;
+        }
+        /* reset end */
+        
+        .con_wrap{
+            width: 1400px;
+            margin: 100px auto;
+        }
+
+        .con{
+            width: 453.33333px;
+            background-color: lightgrey;
+            float: left;
+            margin-right: 20px;
+        }
+
+        .con:last-child{
+            margin-right: 0;
+        }
+
+        .img_wrap{
+            width: 100%;
+            height: 453px;
+            /* =>모든 부모에 높이값이 없으므로 자식이 커진 만큼 부모의 높이도 따라감
+            =>상위 부모에 높이값을 고정시켜두면 하위 자식이 얼마나 커지든 상관없이 고정 됨 */
+            background-color: gray;
+            overflow: hidden;
+        }
+
+        .title_wrap{
+            /* height: 100px; */
+            background-color: #1d1d1d;
+            padding: 25px;
+            box-sizing: border-box;
+        }
+
+        .title_wrap h3{
+            color: orange;
+            font-size: 26px;
+        }
+
+        .title_wrap p{
+            color: white;
+            margin-top: 10px;
+        }
+
+        /* *EVENT
+        =>사용자가 마우스나 키보드로 어떠한 행동을 했을 때 정해진 특정 동작을 표현함 */
+
+        .con:hover img{
+            width: 110%;
+        }
+
+        .con:hover h3{
+            text-decoration: underline;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="con_wrap">
+
+        <div class="con">
+            <a href="#">
+                <div class="img_wrap">
+                    <img src="img/epik_family.jpg" alt="가족사진">
+                </div>
+                <div class="title_wrap">
+                    <h3>가족사진</h3>
+                    <p>2022</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="con">
+            <a href="#">
+                <div class="img_wrap">
+                    <img src="img/epikhigh_is_here_pt.1" alt="히어 상">
+                </div>
+                <div class="title_wrap">
+                    <h3>HERE上</h3>
+                    <p>2022</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="con">
+            <a href="#">
+                <div class="img_wrap">
+                    <img src="img/epikhigh_is_here_pt.2.png" alt="히어 하">
+                </div>
+                <div class="title_wrap">
+                    <h3>HERE下</h3>
+                    <p>2022</p>
+                </div>
+            </a>
+        </div>
+
+
+    </div>
+    <!-- con_wrap end -->
+</body>
+</html>
